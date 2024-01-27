@@ -412,9 +412,6 @@ persist.sys.fuse.passthrough.enable=true
 ro.vendor.vm.ssr.enable=false
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
-# Shutdown
-sys.vendor.shutdown.waittime=500
-
 # Volume
 ro.config.vc_call_vol_steps=8
 
