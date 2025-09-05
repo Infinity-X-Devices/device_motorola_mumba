@@ -47,6 +47,9 @@ TARGET_PROVIDES_LIBAR_PAL := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := parrot
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/configs/bluetooth/include
+
 # Display
 TARGET_SCREEN_DENSITY := 390
 
