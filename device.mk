@@ -296,6 +296,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/parrot/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
+# QSPA
+PRODUCT_PACKAGES += \
+    vendor.qti.qspa-service \
+    qspa_vendor.rc
+
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 36
