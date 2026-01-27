@@ -20,6 +20,7 @@ ro.audio.monitorRotation=true
 ro.audio.monitorWindowRotation=true
 
 # Bluetooth
+bluetooth.auto_connect_profiles.enabled=true
 bluetooth.device_id.vendor_id=0x001D
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.asha.central.enabled=true
