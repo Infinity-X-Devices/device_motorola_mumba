@@ -305,7 +305,6 @@ dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
 dalvik.vm.image-dex2oat-threads=4
 
 # DPM
-persist.vendor.dpm.feature=1
 persist.vendor.dpm.vndr.feature=11
 
 # Widewine
