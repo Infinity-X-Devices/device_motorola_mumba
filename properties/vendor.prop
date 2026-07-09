@@ -164,7 +164,7 @@ vendor.camera.aux.packagelist2=com.motorola.ccc,com.android.settings,com.motorol
 
 # Display
 debug.egl.hw=0
-debug.sf.auto_latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=1
 debug.sf.disable_client_composition_cache=0
 debug.sf.early.app.duration=13666666
 debug.sf.early.sf.duration=12333333
