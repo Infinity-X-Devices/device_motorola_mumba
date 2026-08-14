@@ -20,7 +20,6 @@ from extract_utils.fixups_lib import (
     lib_fixups_user_type,
 )
 
-from extract_utils.fixups_lib import lib_fixups
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -48,6 +47,7 @@ libs_add_vendor_suffix = (
     'vendor.qti.qccvndhal_aidl-V1-ndk',
 )
 
+
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     if partition != 'vendor':
         return None
@@ -68,7 +68,7 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
-         (
+    (
         'vendor/lib64/camera/components/com.qti.node.dewarp.so',
         'vendor/lib64/hw/com.qti.chi.override.so',
         'vendor/lib64/libcamximageformatutils.so',
@@ -76,7 +76,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so',
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
-        'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
+    'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libbinder_shim.so')
@@ -139,8 +139,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('sched_get_priority_max: 1'),
     'vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so': blob_fixup()
         .replace_needed('libbluetooth_audio_session_aidl.so', 'libbluetooth_audio_session_aidl_prebuilt.so'),
-    'vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so': blob_fixup()
-        .replace_needed('android.media.audio.common.types-V4-ndk.so', 'android.media.audio.common.types-V3-ndk.so'),
     'vendor/lib64/hw/libaudiocorehal.qti.so': blob_fixup()
         .replace_needed('android.hardware.audio.core.sounddose-V1-ndk.so', 'android.hardware.audio.core.sounddose-V2-ndk.so')
         .replace_needed('android.hardware.audio.common-V1-ndk.so', 'android.hardware.audio.common-V3-ndk.so')
@@ -152,16 +150,20 @@ blob_fixups: blob_fixups_user_type = {
         .remove_needed('android.hardware.biometrics.common-V4-ndk.so'),
     'system_ext/etc/init/qspa_system.rc': blob_fixup()
         .regex_replace(r'\$\{ro\.boot\.vendor\.qspa:-default\}', 'default'),
-    ('system_ext/etc/seccomp_policy/tcmd.policy', 'vendor/etc/seccomp_policy/qsap_qapeservice.policy', 'vendor/etc/seccomp_policy/syshealthmon.policy'): blob_fixup()
+    (
+        'system_ext/etc/seccomp_policy/tcmd.policy',
+        'vendor/etc/seccomp_policy/qsap_qapeservice.policy',
+        'vendor/etc/seccomp_policy/syshealthmon.policy',
+    ): blob_fixup()
         .add_line_if_missing('lseek: 1'),
     (
-        "vendor/etc/audio/sku_parrot/mixer_paths_parrot_qrd.xml",
+        'vendor/etc/audio/sku_parrot/mixer_paths_parrot_qrd.xml',
     ): blob_fixup()
         .regex_replace(
             r'(<ctl name="RX_RX([012]) Digital Volume" value=")84(" ?/>)',
             r'\g<1>86\g<3>',
         ),
-} # fmt: skip
+}  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
     star_firmware_regex: extract_star_firmware,
