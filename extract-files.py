@@ -143,11 +143,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.audio.core.sounddose-V1-ndk.so', 'android.hardware.audio.core.sounddose-V2-ndk.so')
         .replace_needed('android.hardware.audio.common-V1-ndk.so', 'android.hardware.audio.common-V3-ndk.so')
         .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
-    'vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so': blob_fixup()
-        .replace_needed('android.media.audio.common.types-V4-ndk.so', 'android.media.audio.common.types-V3-ndk.so'),
-    'vendor/bin/hw/android.hardware.biometrics.fingerprint-service.fpc': blob_fixup()
-        .remove_needed('android.hardware.biometrics.fingerprint-V4-ndk.so')
-        .remove_needed('android.hardware.biometrics.common-V4-ndk.so'),
     'system_ext/etc/init/qspa_system.rc': blob_fixup()
         .regex_replace(r'\$\{ro\.boot\.vendor\.qspa:-default\}', 'default'),
     (
