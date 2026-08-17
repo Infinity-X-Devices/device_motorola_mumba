@@ -719,7 +719,6 @@ vendor/framework/com.fingerprints.extension.jar
 vendor/etc/init/android.hardware.biometrics.fingerprint-service-jv.rc
 vendor/etc/init/fingerprint-fpc.rc
 vendor/etc/vintf/manifest/manifest_IMoto_AIDL_Fingerprint.xml
-vendor/lib64/com.motorola.hardware.biometric.fingerprint-V3-ndk.so
 vendor/lib64/com.motorola.hardware.display.panel-V2-ndk.so
 vendor/lib64/com.motorola.hardware.display.panel@1.0.so
 vendor/lib64/hw/anc.hal.so
