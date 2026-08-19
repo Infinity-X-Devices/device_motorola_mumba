@@ -243,6 +243,7 @@ PRODUCT_PACKAGES += \
     ApertureResMumba
 
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
     NcmTetheringOverlay
 
 # Keymint
