@@ -227,6 +227,7 @@ debug.sf.touch_on_blank_not_boost_refreshrate=60
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.use_desiredpresenttime_as_candidate=1
 debug.sf.use_phase_offsets_as_durations=0
+debug.renderengine.blur_algorithm=kawase2
 vendor.hw.sf.IdleLazyResetThresholdT=50
 vendor.hw.sf.LayerHistorySize=90
 vendor.hw.sf.supportPolicyCorrection=1
