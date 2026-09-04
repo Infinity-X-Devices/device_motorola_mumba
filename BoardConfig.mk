@@ -237,6 +237,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
 include vendor/motorola/mumba/BoardConfigVendor.mk
+-include vendor/motorola/mumba-motcamera/BoardConfigVendor.mk
 
 # Include the Dolby Atmos BoardConfig.
 include hardware/dolby/BoardConfig.mk

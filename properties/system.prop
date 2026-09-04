@@ -51,3 +51,9 @@ telephony.lteOnCdmaDevice=1
 
 # Wi-Fi
 ro.wifi.channels=
+
+# Google Lens
+ro.com.google.lens.oem_camera_package=com.android.camera
+
+# Framework allowlists
+persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.aperture
