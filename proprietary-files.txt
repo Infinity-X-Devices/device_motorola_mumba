@@ -1008,6 +1008,8 @@ vendor/etc/init/hw/init.qcom.factory.rc
 vendor/etc/init/hw/init.qti.ufs.rc
 vendor/etc/init/vendor.mmi.carrier.rc
 vendor/etc/init/hw/init.mmi.charge_only.rc
+vendor/etc/init/hw/init.mmi.usb.rc
+vendor/etc/init/hw/init.mmi.wlan.rc
 vendor/etc/init/init.qti.media.rc
 
 # Kernel

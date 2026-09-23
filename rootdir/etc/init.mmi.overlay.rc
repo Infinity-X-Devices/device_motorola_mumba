@@ -167,15 +167,6 @@ service vendor.capsense_reset /vendor/bin/capsense_reset
    group system input
    disabled
 
-service vendor.mmi-cap-sh /vendor/bin/init.mmi.cap.sh
-    class core
-    user root
-    oneshot
-
-service vendor.mot_vsync_psd /vendor/bin/motpsd
-    class late_start
-    user root
-
 on property:sys.boot_completed=1
     start vendor.capsense_reset
     #change adsp pmic test command file access permission
@@ -199,10 +190,6 @@ on property:sys.boot_completed=1
     chown vendor_tcmd system /sys/class/power_supply/charger/device/low_load_en
     chown vendor_tcmd system /sys/class/power_supply/charger/input_current_limit
     chown vendor_tcmd system /sys/class/power_supply/charger/constant_charge_current
-
-    # copy gps license file to /mnt/vendor/persist/data/pfm/licenses
-    copy /vendor/etc/motorola/qcom_gps_license.pfm /mnt/vendor/persist/data/pfm/licenses/qcom_gps_license.pfm
-    chmod 0644 /mnt/vendor/persist/data/pfm/licenses/qcom_gps_license.pfm
 
    # Set adaptive charging perms for HAL
     chown system system /sys/module/qpnp_adaptive_charge/parameters/upper_limit
