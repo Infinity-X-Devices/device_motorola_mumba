@@ -475,8 +475,10 @@ PRODUCT_COPY_FILES += \
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
     firmware_adrastea_wlan_mac.bin_symlink \
+    firmware_adrastea_WCNSS_mot_cfg.ini_symlink \
     firmware_adrastea_WCNSS_qcom_cfg.ini_symlink \
     firmware_wlanmdsp.otaupdate_symlink
+
 
 # WiFi Display
 PRODUCT_PACKAGES += \
