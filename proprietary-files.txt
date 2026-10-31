@@ -709,6 +709,11 @@ vendor/bin/hw/android.hardware.biometrics.face-service.face-isv
 vendor/etc/init/android.hardware.biometrics.face-service.face.rc
 vendor/etc/vintf/manifest/face-default_4.xml
 vendor/lib64/libFaceUnlock.so
+product/etc/default-permissions/default-permissions-faceunlock.xml
+product/etc/permissions/com.motorola.faceunlock.xml
+product/etc/permissions/privapp-permissions-com.motorola.faceunlock.xml
+product/etc/sysconfig/hiddenapi-whitelist-com.motorola.faceunlock.xml
+product/priv-app/MotoFaceUnlock/MotoFaceUnlock.apk
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint-service-jv
