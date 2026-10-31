@@ -1,6 +1,6 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Motorola Moto g57 power (mumba) (16 WWAAS36V.48-12-ST12.1-5b6d8).
-## variant: RETCN
+## are from Motorola Moto g57 power (mumba) (17 A171WAAM-A171-ST2.1).
+## variant: RETIN
 
 # ACDB Data
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
@@ -834,6 +834,9 @@ vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
 vendor/lib64/hw/libqtigatekeeper.so
 
 # GNSS
+system/lib64/vendor.qti.gnss-V8-cpp.so
+system_ext/bin/loc_sys_service
+system_ext/etc/init/loc_sys_service.rc
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
@@ -1276,6 +1279,7 @@ system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.qccsyshal_aidl-halimpl.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
+system_ext/lib64/vendor.qti.qccvndhal_aidl-V2-ndk.so
 
 # QCC (Vendor)
 vendor/bin/qcc-vendor
@@ -1308,6 +1312,8 @@ vendor/lib64/vendor.qti.qesdhal@1.2.so
 vendor/lib64/vendor.qti.qesdhal@1.3.so
 vendor/lib64/vendor.qti.qesdhalaidl-V2-ndk.so
 vendor/lib64/vendor.qti.qesdsys-V4-ndk.so
+vendor/lib64/vendor.qti.qesdsys-V3-ndk.so
+system_ext/lib64/vendor.qti.qesdhalaidl-V3-ndk.so
 vendor/lib64/vendor.qti.snapdragonServices-V1-ndk.so
 vendor/lib64/vendor.qti.snapdragonServices.qape-V1-ndk.so
 
@@ -1400,9 +1406,16 @@ vendor/etc/init/motorola.hardware.health.storage.service.rc
 vendor/etc/vintf/manifest/motorola.hardware.health.service.xml
 vendor/etc/vintf/manifest/motorola.hardware.health.storage.service.xml
 vendor/lib64/libmotohid.so
-vendor/lib64/motorola.hardware.health.aidl-V1-ndk.so
+vendor/lib64/motorola.hardware.health.aidl-V2-ndk.so
 vendor/lib64/motorola.hardware.health.storage.aidl-V1-ndk.so
 vendor/lib64/motorola.hardware.health.storage@1.0.so
+
+# IMS - VT
+system_ext/bin/imsvtdaemon
+system_ext/etc/init/imsvtdaemon.rc
+system_ext/etc/seccomp_policy/imsvtdaemon.policy
+system_ext/framework/vendor.qti.ImsVtService-java.jar
+system_ext/lib64/vendor.qti.ImsVtService-ndk.so
 
 # RIL - UIM
 product/app/uimgbaservice/uimgbaservice.apk
@@ -1425,7 +1438,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 
 # RIL - system_ext
-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
@@ -1668,7 +1680,6 @@ system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
