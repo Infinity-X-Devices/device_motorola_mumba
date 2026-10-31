@@ -135,13 +135,6 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_line_if_missing('lseek: 1'),
     (
-        'vendor/etc/audio/sku_parrot/mixer_paths_parrot_qrd.xml',
-    ): blob_fixup()
-        .regex_replace(
-            r'(<ctl name="RX_RX([012]) Digital Volume" value=")84(" ?/>)',
-            r'\g<1>86\g<3>',
-        ),
-    (
         'vendor/lib64/soundfx/libbundleaidl.so',
     ): blob_fixup()
         .replace_needed('android.media.audio.common.types-V4-ndk.so', 'android.media.audio.common.types-V3-ndk.so')
