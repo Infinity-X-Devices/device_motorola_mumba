@@ -141,6 +141,12 @@ blob_fixups: blob_fixups_user_type = {
             r'(<ctl name="RX_RX([012]) Digital Volume" value=")84(" ?/>)',
             r'\g<1>86\g<3>',
         ),
+    (
+        'vendor/lib64/soundfx/libbundleaidl.so',
+    ): blob_fixup()
+        .replace_needed('android.media.audio.common.types-V4-ndk.so', 'android.media.audio.common.types-V3-ndk.so')
+        .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so')
+        .replace_needed('android.hardware.audio.effect-V2-ndk.so','android.hardware.audio.effect-V3-ndk.so'),
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
