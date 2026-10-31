@@ -1,2 +1,5 @@
 # Torch Control
 type sysfs_torch, sysfs_type, fs_type;
+
+# Face
+type hal_face_data_file, file_type, data_file_type;

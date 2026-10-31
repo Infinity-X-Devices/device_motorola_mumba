@@ -1,1 +1,2 @@
 vendor.hdrchecker.froce.mode          u:object_r:vendor_camera_prop:s0
+vendor.faceauth.  u:object_r:vendor_faceauth_prop:s0
