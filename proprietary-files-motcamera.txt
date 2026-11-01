@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Motorola Moto g57 power (mumba) (16 W1WAAS36.48-12-40-4).
+## are from Motorola Moto g57 power (mumba) (17 A171WAAM-A171-ST2.1).
 ## variant: RETIN
 
 # MotCamera5
