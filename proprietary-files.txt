@@ -1918,7 +1918,6 @@ vendor/firmware/vpu20_4v_unsigned.mbn
 vendor/apex/com.google.android.widevine-12498615.apex
 vendor/etc/qcom_widevine_licenses.pfm
 vendor/lib64/libcpion.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 
 # Wi-Fi
