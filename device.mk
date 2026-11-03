@@ -214,9 +214,53 @@ PRODUCT_PACKAGES += \
     init.vendor.st21nfc.rc \
     init.mmi.rc \
     init.qcom.recovery.rc \
+    init.qcom.factory.rc \
+    init.qti.ufs.rc \
+    vendor.mmi.carrier.rc \
+    init.mmi.charge_only.rc \
+    init.mmi.wlan.rc \
+    init.qti.media.rc
     init.recovery.touch.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
+
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.kernel.post_boot-parrot.sh \
+    init.kernel.post_boot-ravelin.sh \
+    init.kernel.post_boot.sh \
+    init.mmi.boot.sh \
+    init.mmi.touch.sh \
+    init.oem.fingerprint2.sh \
+    init.oem.hw.sh \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sh \
+    init.qti.kernel.sh \
+    init.qti.keymaster.sh \
+    init.qti.qcv.sh \
+    init.qti.write.sh \
+    system_dlkm_modprobe.sh \
+    vendor_modprobe.sh \
+    init.crda.sh \
+    init.gbmods.sh \
+    init.mdm.sh \
+    init.mmi.block_perm.sh \
+    init.mmi.display.sh \
+    init.mmi.mdlog-getlogs.sh \
+    init.mmi.modem-rfs.sh \
+    init.mmi.shutdown.sh \
+    init.mmi.usb.sh \
+    init.mmi.wlan-getlogs.sh \
+    init.qcom.coex.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.sdio.sh \
+    init.qti.kernel.debug-parrot.sh \
+    init.qti.kernel.debug-ravelin.sh \
+    init.qti.kernel.debug.sh \
+    init.qti.kernel.early_debug-parrot.sh \
+    init.qti.kernel.early_debug.sh
 
 # Keylayout
 PRODUCT_COPY_FILES += \
