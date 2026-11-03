@@ -67,6 +67,8 @@ qcom-scm.ko
 qcom-ipcc.ko
 msm_qmp.ko
 qcom_hwspinlock.ko
+chipone_tddi_v3_mmi.ko
+ilitek_v4_mmi.ko
 gh_virt_wdt.ko
 gh_dbl.ko
 gh_msgq.ko
