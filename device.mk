@@ -219,7 +219,7 @@ PRODUCT_PACKAGES += \
     vendor.mmi.carrier.rc \
     init.mmi.charge_only.rc \
     init.mmi.wlan.rc \
-    init.qti.media.rc
+    init.qti.media.rc \
     init.recovery.touch.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
