@@ -214,6 +214,7 @@ PRODUCT_PACKAGES += \
     init.vendor.st21nfc.rc \
     init.mmi.rc \
     init.qcom.recovery.rc \
+    init.recovery.touch.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
 
