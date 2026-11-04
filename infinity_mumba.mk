@@ -10,14 +10,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mumba device
 $(call inherit-product, device/motorola/mumba/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mumba
+# Maintainer Name 
+INFINITY_MAINTAINER := "NoEscape.exe_&_ShirotSukiyo"
+
+# Whether you are compiling being an OFFICIAL Maintainer:
+INFINITY_BUILD_TYPE := OFFICIAL
+
+PRODUCT_NAME := infinity_mumba
 PRODUCT_DEVICE := mumba
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := Motorola
-PRODUCT_MODEL := G57 Power
+PRODUCT_MODEL := Motorola G57 Power
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 

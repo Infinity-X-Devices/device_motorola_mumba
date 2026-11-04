@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_mumba.mk
+    $(LOCAL_DIR)/infinity_mumba.mk
