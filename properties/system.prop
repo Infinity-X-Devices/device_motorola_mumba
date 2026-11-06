@@ -57,3 +57,8 @@ ro.com.google.lens.oem_camera_package=com.android.camera
 
 # Framework allowlists
 persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.aperture
+
+# InfinityX
+ro.product.marketname=Motorola G57 Power
+ro.infinity.soc=Snapdragon 6s Gen 4
+ro.infinity.camera=50MP + 8MP + 8MP
