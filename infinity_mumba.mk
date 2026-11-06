@@ -14,7 +14,7 @@ $(call inherit-product, device/motorola/mumba/device.mk)
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Maintainer Name 
-INFINITY_MAINTAINER := "NoEscape.exe_&_ShirotSukiyo"
+INFINITY_MAINTAINER := "NoEscape.exe"
 
 # Whether you are compiling being an OFFICIAL Maintainer:
 INFINITY_BUILD_TYPE := OFFICIAL
