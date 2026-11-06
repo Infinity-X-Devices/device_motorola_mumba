@@ -1,0 +1,11 @@
+--- a/smali/motorola/wrap/android/hardware/face/FaceManager_wrap.smali
++++ b/smali/motorola/wrap/android/hardware/face/FaceManager_wrap.smali
+@@ -329,7 +329,7 @@
+     .line 148
+     iget-object v0, p0, Lmotorola/wrap/android/hardware/face/FaceManager_wrap;->mFM:Landroid/hardware/face/FaceManager;
+ 
+-    invoke-virtual {v0, p1}, Landroid/hardware/face/FaceManager;->hasEnrolledTemplatesWrap(I)Z
++    invoke-virtual {v0, p1}, Landroid/hardware/face/FaceManager;->hasEnrolledTemplates(I)Z
+ 
+     move-result v0
+ 

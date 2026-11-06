@@ -62,6 +62,12 @@ function blob_fixup() {
                 sed -i 's|file="/system/framework/moto-core_services.jar"|file="/system/framework/moto-core_services.jar" dependency="moto-face-framework"|' "${2}"
             fi
             ;;
+        system/framework/moto-core_services.jar)
+            [ "$2" = "" ] && return 0
+            apktool_patch "${2}" \
+                "${MY_DIR}/blob-patches/0002-moto-core_services-Use-AOSP-face-enrollment-query.patch" \
+                -r
+            ;;
         product/priv-app/MotCamera5/MotCamera5.apk)
             [ "$2" = "" ] && return 0
             apktool_patch "${2}" \
