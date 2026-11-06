@@ -56,6 +56,12 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        system/etc/permissions/moto-core_services.xml)
+            [ "$2" = "" ] && return 0
+            if ! grep -q 'dependency="moto-face-framework"' "${2}"; then
+                sed -i 's|file="/system/framework/moto-core_services.jar"|file="/system/framework/moto-core_services.jar" dependency="moto-face-framework"|' "${2}"
+            fi
+            ;;
         product/priv-app/MotCamera5/MotCamera5.apk)
             [ "$2" = "" ] && return 0
             apktool_patch "${2}" \
